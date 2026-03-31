@@ -1,7 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import profileImage from "../assets/images/profile.png";
 ---
 
 <Layout>
   <h1>Nash Andre Berber</h1>
+  <div class="flex gap-4 items-start">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel leo et
+      felis iaculis congue et vel sapien. Pellentesque varius, sapien a
+      vulputate tincidunt, eros quam convallis turpis, vel commodo ipsum nibh
+      sit amet ante. Nam bibendum lectus risus, non convallis sem convallis at.
+      Suspendisse mauris odio, maximus ut dapibus id, rhoncus id eros. Fusce
+      quis ipsum lorem. Duis vulputate facilisis vulputate. Maecenas nec turpis
+      urna. Aliquam semper laoreet pharetra.
+    </p>
+    <Image
+      src={profileImage}
+      alt="Profile Picture"
+      class="w-64 object-contain"
+    />
+  </div>
 </Layout>
