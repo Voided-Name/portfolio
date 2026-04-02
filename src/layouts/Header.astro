@@ -1,13 +1,33 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
 <header>
-  <menu class="flex gap-4">
-    <a href="/">
-      <li>Home</li>
+  <div class="flex gap-5 font-bold p-2 pl-8">
+    <a
+      class={currentPath === ""
+        ? "text-green-400"
+        : "text-green-950 hover:text-green-400"}
+      href="/"
+    >
+      Home
     </a>
-    <a href="/blog/">
-      <li>Blog</li>
+    <a
+      class={currentPath === "blog/" || currentPath === "blog"
+        ? "text-green-400"
+        : "text-green-950 hover:text-green-400"}
+      href="/blog/"
+    >
+      Blog
     </a>
-    <a href="/projects/">
-      <li>Projects</li>
+    <a
+      class={currentPath === "projects/" || currentPath === "projects"
+        ? "text-green-400"
+        : "text-green-950 hover:text-green-400"}
+      href="/projects/"
+    >
+      Projects
     </a>
-  </menu>
+  </div>
 </header>
