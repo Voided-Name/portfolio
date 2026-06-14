@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <title>naeberber.com</title>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script.js"></script>
+    </head>
+    <body class="space-mono-regular">
+        <nav class="navbar">
+            <a href="../index.html" class="navButton">Home</a>
+            <a href="../blog.html" class="activeNavButton">Blog</a>
+            <a href="../projects.html" class="navButton">Projects</a>
+        </nav>
+        <hr />
+        <main class="text-justify">
+            <h1 class="font-surface">On Internet Origins</h1>
+            <p>
+                Before the Internet connected billions of people, it had to
+                solve one terrifying Cold War problem: how do you build a
+                communication network that could survive a nuclear attack?
+            </p>
+            <p>
+                During the Cold War, the United States relied on long-distance
+                military communication with switching centers spread across the
+                country. The primary issue with this system is its centralized
+                nature. If a major switching center was destroyed by an enemy
+                attack it will cause a major disruption on the whole
+                communication network.
+            </p>
+            <h2>Surviving the Nukes</h2>
+            <p>
+                Paul Baran recognized the problem and created and proposed a
+                model for survival communication. In early 1960s Paul Baran
+                published his paper "On Distributed Communications Networks" He
+                presented two important concepts that is fundamental to how the
+                modern Internet functions:
+            </p>
+            <ul>
+                <li>Distributed Communications</li>
+                <li>Message Blocks</li>
+            </ul>
+            <p>
+                Lets compare the telephone network during the cold war vs using
+                the concepts Paul Baran introduced. If person A made a call to
+                person B, the network will establish a continuous path between
+                them, if the switching center fails along the path, the call
+                could be disrupted. Instead of reserving one fixed path, the
+                message is broken into many smaller pieces called packets, which
+                travels the network through different routes. This is why the
+                packet switching was a powerful idea, the information can keep
+                flowing through whatever routes were available.
+            </p>
+            <p>
+                ARPANET, one of the Internet's foundational predecessors, used
+                these concepts.
+            </p>
+
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.rand.org/pubs/research_memoranda/RM3420.html"
+                        >On Distributed Communication, Paul Baran</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.rand.org/pubs/articles/2018/paul-baran-and-the-origins-of-the-internet.html"
+                        >Origins of the Internet, RAND</a
+                    >
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/ARPANET"
+                        >ARPANET, Wikipedia</a
+                    >
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>

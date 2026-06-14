@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    color-scheme: light;
+
+    --color-bg: #f3f9f9;
+    --color-surface: #5eaf73;
+    --color-text: #021b1a;
+    --color-muted: #03624c;
+    --color-border: #032221;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --color-bg: #021b1a;
+        --color-surface: #5eaf73;
+        --color-text: #f3f9f9;
+        --color-muted: #03624c;
+        --color-border: #032221;
+    }
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding: 0 24px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 0 64px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 0 150px;
+    }
+}
+
+main {
+    padding: 0 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navButton {
+    padding: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-surface);
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: background-color 500ms;
+}
+
+.navButton:hover {
+    background-color: var(--color-muted);
+}
+
+.activeNavButton {
+    padding: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-surface);
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-surface);
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-surface);
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.blog-item {
+    display: flex;
+    gap: 20px;
+}
+
+.font-surface {
+    color: var(--color-surface);
+}
+
+.text-justify {
+    text-align: justify;
+}
