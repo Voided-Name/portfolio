@@ -131,6 +131,10 @@ main {
     color: var(--color-surface);
 }
 
+.font-muted {
+    color: var(--color-muted);
+}
+
 .text-justify {
     text-align: justify;
 }
