@@ -41,6 +41,10 @@ body {
     .navButton {
         font-size: 30px;
     }
+
+    main {
+        padding: 0px 50px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -50,7 +54,7 @@ body {
 }
 
 main {
-    padding: 0 50px;
+    padding: 0 0;
 }
 
 .navbar {
