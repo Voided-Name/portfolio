@@ -28,6 +28,37 @@ body {
     color: var(--color-text);
     padding: 0 24px;
     font-family: "Courier New", Courier, monospace;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main {
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--color-surface);
+}
+
+.hidden-small {
+    display: none;
+}
+
+.show-small {
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -45,16 +76,24 @@ body {
     main {
         padding: 0px 50px;
     }
-}
 
-@media (min-width: 1200px) {
-    body {
-        padding: 0 150px;
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-}
 
-main {
-    padding: 0 0;
+    .profile-img {
+        margin: 0;
+    }
+
+    .hidden-small {
+        display: block;
+    }
+
+    .show-small {
+        display: none;
+    }
 }
 
 .navbar {
