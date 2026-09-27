@@ -41,8 +41,8 @@ const currentPath = Astro.url.pathname;
     [mask-image:radial-gradient(circle_at_center,black_0%,black_35%,transparent_75%)]"
       ></div>
 
-      <div class="relative mx-auto flex max-w-5xl items-center justify-between px-6 py-3 text-zinc-950 dark:text-zinc-50">
-        <p class="text-4xl">Nash Berber</p>
+      <div class="relative mx-auto flex max-w-5xl items-center justify-between px-6 py-3 text-zinc-950 dark:text-zinc-50 flex-col sm:flex-row">
+        <p class="text-xl sm:text-4xl">Nash Berber</p>
 
         <div class="flex gap-4">
           <nav class="flex gap-4 transition-all duration-1000">
@@ -71,7 +71,7 @@ const currentPath = Astro.url.pathname;
             <a
               href="/projects"
               class={
-                currentPath === "/projects"
+                currentPath.startsWith("/projects")
                   ? "font-bold dark:text-emerald-400 text-emerald-950"
                   : "opacity-60 hover:text-emerald-950 dark:hover:text-emerald-400"
               }
