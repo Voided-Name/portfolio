@@ -3,39 +3,136 @@ import Base from "../layouts/Base.astro";
 ---
 
 <Base>
-  <nav class="navbar">
-    <a href="index.html" class="activeNavButton">
-      Home
-    </a>
-    <a href="blog.html" class="navButton">
-      Blog
-    </a>
-    <a href="projects.html" class="navButton">
-      Projects
-    </a>
-    <!--<a href="cli/index.html" class="navButton">CLI</a>-->
-  </nav>
-  <hr />
-  <main>
-    <div class="hero">
-      <div>
-        <h1>Nash</h1>
+  <main class="mx-auto w-full max-w-5xl px-6 pt-3">
+    <div class="flex gap-4">
+      <div class="w-full md:w-3/4">
+        <h1 class="mb-2.5 text-2xl font-bold text-emerald-800 dark:text-amber-200">
+          Hello there!
+        </h1>
+
+        <p class="text-justify">
+          A software developer based in Cabanatuan City, a recent Bachelor of
+          Science in Information Technology graduate from{" "}
+          <a
+            href="https://neust.edu.ph/"
+            class="text-emerald-700 hover:underline dark:text-amber-400"
+          >
+            NEUST
+          </a>
+          . I also interned at a from{" "}
+          <a
+            href="https://drpjgmrmc.doh.gov.ph/"
+            class="text-emerald-700 hover:underline dark:text-amber-400"
+          >
+            Public Hospital
+          </a>{" "}
+          as a tech support and front-end developer. I love tinkering with
+          software and figuring out how things work, so much so that for my
+          capstone I used varying technologies for the first time as I'm quite
+          confident with my ability to adapt. I also like taking ownership of my
+          work. Thus, I was almost always the leader for any software
+          development project during my time at college. Lastly, I enjoy the
+          social aspect that came with the work, especially during my
+          internship. I learned the importance of effective and transparent
+          communication when handling multiple tasks due to the nature of the
+          internship.
+        </p>
+
+        <h1 class="mb-2 mt-2 text-xl font-bold text-emerald-800 dark:text-amber-200">
+          History
+        </h1>
+
+        <ul class="space-y-2">
+          <li class="before:mr-2 before:content-['>'] before:text-emerald-600 dark:before:text-amber-300">
+            2026 (June) - Graduated at Nueva Ecija University of Science and
+            Technology | Bachelor of Science in Information Technology
+          </li>
+
+          <li class="before:mr-2 before:content-['>'] before:text-emerald-600 dark:before:text-amber-300">
+            2026 (May) - Interned at Dr. Paulino J. Garcia Memorial Research and
+            Medical Center as Tech Support and Software Developer
+          </li>
+
+          <li class="before:mr-2 before:content-['>'] before:text-emerald-600 dark:before:text-amber-300">
+            2004 - Born in Cabanatuan, Philippines
+          </li>
+        </ul>
       </div>
-      <img
-        class="profile-img"
-        src="assets/images/profilePic.JPG"
-        alt="Profile Picture"
-        width="150px"
-      />
+
+      <div class="hidden md:block w-1/4">
+        <img
+          src="assets/images/profilePic.JPG"
+          alt="Profile Picture"
+          class="w-full"
+        />
+      </div>
     </div>
-    <h2>Bio</h2>
-    <p>2004 - Born in Cabanatuan, Philippines</p>
-    <p>
-      2026 - Graduated at Nueva Ecija University of Science and Technology |
-      Bachelor of Science in Information Technology
-    </p>
-    <h2>Links</h2>
-    <a class="link flex items-center" href="https://github.com/Voided-Name">
+
+    <h1 class="mb-2 mt-2 text-xl font-bold text-emerald-800 dark:text-amber-200">
+      Accomplishments
+    </h1>
+
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-2 items-center">
+        <img
+          src="assets/images/startup.jpg"
+          class="w-80 aspect-video object-cover rounded-xl m-4"
+        />
+        <div>
+          <p class="text-emerald-800 dark:text-amber-200">October 31 2024</p>
+          <p class="font-bold text-2xl text-emerald-900 dark:text-amber-300">
+            1st Place
+          </p>
+          <a
+            href="https://www.facebook.com/share/p/19LTkgVGJy/"
+            class="text-xl underline decoration-2 hover:underline hover:decoration-emerald-400 dark:hover:decoration-amber-200 transition-colors"
+          >
+            Philippine Startup Challenge 9 Regional Pitching Competition -
+            Region III
+          </a>
+        </div>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <img
+          src="assets/images/its.jpg"
+          class="w-80 aspect-video object-cover rounded-xl m-4"
+        />
+        <div>
+          <p class="text-emerald-800 dark:text-amber-200">October 17 2025</p>
+          <p class="font-bold text-2xl text-emerald-900 dark:text-amber-300">
+            3rd Place
+          </p>
+          <a
+            href="https://www.facebook.com/share/p/1E1EGTrFUE/"
+            class="text-xl underline decoration-2 hover:underline hover:decoration-emerald-400 dark:hover:decoration-amber-200 transition-colors"
+          >
+            RAITE 2025 ITS Cloud Computing Competition
+          </a>
+        </div>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <img
+          src="assets/images/capstone.jpg"
+          class="w-80 aspect-video object-cover rounded-xl m-4"
+        />
+        <div>
+          <p class="text-emerald-800 dark:text-amber-200">April 28 2026</p>
+          <p class="font-bold text-2xl text-emerald-900 dark:text-amber-300">
+            Gold Award
+          </p>
+          <a
+            href="https://www.facebook.com/share/p/1DGPLx3jeU/"
+            class="text-xl underline decoration-2 hover:underline hover:decoration-emerald-400 dark:hover:decoration-amber-200 transition-colors"
+          >
+            Best Capstone for BSIT Major in DST
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="my-2 flex w-full justify-center gap-2 text-emerald-700/50 dark:text-emerald-900">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -46,72 +143,6 @@ import Base from "../layouts/Base.astro";
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="lucide lucide-code-xml-icon lucide-code-xml"
-      >
-        <path d="m18 16 4-4-4-4" />
-        <path d="m6 8-4 4 4 4" />
-        <path d="m14.5 4-5 16" />
-      </svg>
-      Github
-    </a>
-    <a
-      class="link flex items-center"
-      href="https://www.linkedin.com/in/nash-andre-berber-553621223/"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-user-icon lucide-user"
-      >
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-        <circle cx="12" cy="7" r="4" />
-      </svg>
-      Linkedin
-    </a>
-    <h2>Accomplishments</h2>
-    <a
-      class="link dot-line"
-      href="https://www.facebook.com/share/p/19LTkgVGJy/"
-    >
-      1st Place - Philippine Startup Challenge 9 Regional Pitching Competition -
-      Region III
-    </a>
-    <hr />
-    <a
-      class="link dot-line"
-      href="https://www.facebook.com/share/p/1E1EGTrFUE/"
-    >
-      3rd Place - RAITE 2025 ITS Cloud Computing Competition
-    </a>
-    <hr />
-    <a
-      class="link dot-line"
-      href="https://www.facebook.com/share/p/1DGPLx3jeU/"
-    >
-      Gold Award, Best Capstone for DST Major in BSIT
-    </a>
-    <footer
-      class="flex justify-center items-center font-muted"
-      style="margin: 30px 0px"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-copyright-icon lucide-copyright"
       >
         <circle cx="12" cy="12" r="10" />
         <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />

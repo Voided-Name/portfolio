@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Base>
+  <main class="mx-auto w-full max-w-5xl px-6 pt-3">
+    <h1 class="mb-2.5 text-2xl font-bold text-emerald-800 dark:text-amber-200">
+      Blogs
+    </h1>
+    {posts.map((post) => (
+      <a href={`/blogs/${post.id}`}>
+        <h2 class="underline text-2xl hover:decoration-emerald-400 dark:hover:decoration-amber-200 hover:decoration-wavy">
+          {post.data.title}
+        </h2>
+        <time>
+          {post.data.date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
+        </time>
+      </a>
+    ))}
+  </main>
+</Base>
